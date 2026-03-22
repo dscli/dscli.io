@@ -22,8 +22,7 @@ table_of_contents: true
 license: "CC BY-NC-SA 4.0"
 draft_reason: ""
 target_publish_date: ""
-
-# 贪吃蛇野望
+---
 
 儿子关心Dscli的开发进展，问我现在干什么。我其实没干什么。每次遇到不会
 解的问题，我就重构。现在我就在重构，给时间以时间，其实就是跟它耗，看谁
