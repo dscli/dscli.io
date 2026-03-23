@@ -289,8 +289,8 @@ CONTENT="${CONTENT//\{\{tags\}\}/$TAGS}"
 
 # 添加额外的metadata
 # 提取Frontmatter和正文
-FRONTMATTER=$(echo "$CONTENT" | awk '/^---$/{i++}i==1')
-BODY=$(echo "$CONTENT" | awk '/^---$/{i++}i==2')
+FRONTMATTER=$(echo "$CONTENT" | awk '/^---$/{i++;next}i==1')
+BODY=$(echo "$CONTENT" | awk '/^---$/{i++;next}i==2')
 
 # 构建完整的metadata
 FULL_FRONTMATTER=$(cat << EOF
